@@ -12,30 +12,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-set(TEST_NAME mathTest)
-
-set(TEST_SOURCES
-        mathTest.cpp
-        ${PROJECT_SOURCE_DIR}/src/cpp/math/math.cpp
-    )
-
-set(TEST_LIST
-        is_even
-        fast_module
-        fast_division
-        arithmetic_progression_sum
-    )
-
-set(TEST_EXTRA_LIBRARIES
-    )
-
-set(TEST_NEEDED_SOURCES
-    )
-
-add_unittest_executable(
-        "${TEST_NAME}"
-        "${TEST_SOURCES}"
-        "${TEST_LIST}"
-        "${TEST_EXTRA_LIBRARIES}"
-        "${TEST_NEEDED_SOURCES}"
-    )
+# Add test subdirectories
+add_subdirectory(database)
